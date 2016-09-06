@@ -30,4 +30,8 @@ public interface MovieService {
 	
 	public List<Movie> sortByImdbVotes();
 	
+	public List<Movie> topRatedMovies();
+	
+	public List<Movie> topRatedSeries();
+	
 }

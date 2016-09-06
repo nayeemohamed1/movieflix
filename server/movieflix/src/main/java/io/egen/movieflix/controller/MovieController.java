@@ -86,7 +86,16 @@ public class MovieController {
 	public List<Movie> sortByImdbVote(){
 		return movieService.sortByImdbVotes();
 	}
- 		
+ 	
+	@RequestMapping(method=RequestMethod.GET, path="topmovies", produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public List<Movie> topRatedMovies(){
+		return movieService.topRatedMovies();
+	}
+	
+	@RequestMapping(method=RequestMethod.GET, path="topseries", produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public List<Movie> topRatedSeries(){
+		return movieService.topRatedSeries();
+	}
 }		
 	
 	

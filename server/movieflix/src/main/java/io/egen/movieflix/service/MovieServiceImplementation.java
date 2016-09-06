@@ -102,5 +102,15 @@ public class MovieServiceImplementation implements MovieService{
 		return movieRepository.sortByImdbVotes();
 	}
 
-	
+	@Override
+	public List<Movie> topRatedMovies(){
+		return movieRepository.topRatedMovies();
+	}
+	@Override
+	public List<Movie> topRatedSeries() {
+
+		return movieRepository.topRatedSeries();
+	}
+
+
 }

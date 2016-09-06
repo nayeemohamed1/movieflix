@@ -139,5 +139,25 @@ public class MovieRepositoryImplementation implements MovieRepository{
 		return null;
 	}
 
+
+	@Override
+	public List<Movie> topRatedMovies() {
+		TypedQuery<Movie> query=em1.createNamedQuery("Movie.topRatedMovies",Movie.class);
+		query.setParameter("pType", "movie");
+		query.setParameter("pValue", 8.0);
+		List<Movie> movies=query.getResultList();
+		return movies;
+	}
+
+
+	@Override
+	public List<Movie> topRatedSeries() {
+		TypedQuery<Movie> query=em1.createNamedQuery("Movie.topRatedSeries",Movie.class);
+		query.setParameter("pType", "series");
+		query.setParameter("pValue", 8.0);
+		List<Movie> movies=query.getResultList();
+		return movies;
+	}
+
 	
 }
