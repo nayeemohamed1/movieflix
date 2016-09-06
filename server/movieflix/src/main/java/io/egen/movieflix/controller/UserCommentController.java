@@ -31,7 +31,7 @@ public class UserCommentController {
 	}
 	
 	@RequestMapping(method=RequestMethod.GET, path="{id}", produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public UserComment findOne(@PathVariable String id){
+	public UserComment findOne(@PathVariable("id") String id){
 		return userCommentService.findOne(id);
 	}
 	
@@ -46,7 +46,7 @@ public class UserCommentController {
 	}
 	
 	@RequestMapping(method=RequestMethod.DELETE, path="{id}")
-	public void delete(@PathVariable String id){
+	public void delete(@PathVariable("id") String id){
 		userCommentService.delete(id);
 	}
 	

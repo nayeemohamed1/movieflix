@@ -17,4 +17,18 @@ public interface MovieRepository {
 	public Movie update(Movie mov);
 	
 	public void delete(Movie mov);
+	
+	public List<Movie> findByType(String type);
+	
+	public List<Movie> findByYear(int year);
+	
+	public List<Movie> findByGenre(String genre);
+	
+	public List<Movie> sortByImdbRatings();
+	
+	public List<Movie> sortByYear();
+	
+	public List<Movie> sortByImdbVotes();
+	
+
 }

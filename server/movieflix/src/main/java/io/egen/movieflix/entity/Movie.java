@@ -15,7 +15,13 @@ import org.hibernate.annotations.GenericGenerator;
 
 @NamedQueries({
 	@NamedQuery(name="Movie.findAll", query="SELECT m from Movie m ORDER BY title ASC"),
-	@NamedQuery(name="Movie.findByTitle", query="SELECT m from Movie m WHERE m.title=:pTitle")
+	@NamedQuery(name="Movie.findByTitle", query="SELECT m from Movie m WHERE m.title=:pTitle"),
+	@NamedQuery(name="Movie.findByType", query="SELECT m from Movie m WHERE m.type=:pType"),
+	@NamedQuery(name="Movie.findByYear", query="SELECT m from Movie m WHERE m.year=:pYear"),
+	@NamedQuery(name="Movie.findByGenre", query="SELECT m from Movie m WHERE m.genre=:pGenre"),
+	@NamedQuery(name="Movie.sortByImdbRatings", query="SELECT m from Movie m ORDER BY imdbRating DESC"),
+	@NamedQuery(name="Movie.sortByYear", query="SELECT m from Movie m ORDER BY year DESC"),
+	@NamedQuery(name="Movie.sortByImdbVotes", query="SELECT m from Movie m ORDER BY imdbVotes DESC")
 })
 
 public class Movie {
@@ -27,10 +33,27 @@ public class Movie {
 	
 	@Column(unique=true)
 	private String title;
-
-	
 	
 	private int year;
+	private String rated;
+	private String released;
+	private String runtime;
+	private String genre;
+	private String director;
+	private String writer;
+	private String actors;
+	private String plot;
+	private String language;
+	private String country;
+	private String awards;
+	private String poster;
+	private String imdbID;
+	private int metascore;
+	private double imdbRating;
+	private long imdbVotes;
+	private String type;
+	
+	
 	public String getId() {
 		return id;
 	}
@@ -139,10 +162,11 @@ public class Movie {
 	public void setImdbRating(double imdbRating) {
 		this.imdbRating = imdbRating;
 	}
-	public String getImdbVotes() {
+	public long getImdbVotes() {
 		return imdbVotes;
 	}
-	public void setImdbVotes(String imdbVotes) {
+	public void setImdbVotes(long imdbVotes) {
+		
 		this.imdbVotes = imdbVotes;
 	}
 	public String getType() {
@@ -151,23 +175,7 @@ public class Movie {
 	public void setType(String type) {
 		this.type = type;
 	}
-	private String rated;
-	private String released;
-	private String runtime;
-	private String genre;
-	private String director;
-	private String writer;
-	private String actors;
-	private String plot;
-	private String language;
-	private String country;
-	private String awards;
-	private String poster;
-	private String imdbID;
-	private int metascore;
-	private double imdbRating;
-	private String imdbVotes;
-	private String type;
+
 	
 		
 }

@@ -15,5 +15,19 @@ public interface MovieService {
 	public Movie update(String id, Movie mov );
 	
 	public void delete(String id);
+	
+	public List<Movie> findByType(String type);
+	
+	public List<Movie> findByYear(int year);
+	
+	public List<Movie> findByGenre(String genre);
+	
+	public Movie findByTitle(String title);
 
+	public List<Movie> sortByImdbRatings();
+	
+	public List<Movie> sortByYear();
+	
+	public List<Movie> sortByImdbVotes();
+	
 }

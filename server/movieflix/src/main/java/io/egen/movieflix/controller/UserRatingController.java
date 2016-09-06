@@ -32,7 +32,7 @@ public class UserRatingController {
 	}
 
 	@RequestMapping(method=RequestMethod.GET, path="{id}", produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public UserRating findOne(@PathVariable String id){
+	public UserRating findOne(@PathVariable("id") String id){
 		return userRatingService.findOne(id);
 	}
 	
@@ -47,7 +47,7 @@ public class UserRatingController {
 	}
 
 	@RequestMapping(method=RequestMethod.DELETE, path="{id}")
-	public void delete(@PathVariable String id){
+	public void delete(@PathVariable("id") String id){
 		userRatingService.delete(id);
 	}
 }

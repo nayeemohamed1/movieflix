@@ -66,4 +66,41 @@ public class MovieServiceImplementation implements MovieService{
 		movieRepository.delete(existing);
 	}
 
+	@Override
+	public List<Movie> findByType(String type) {
+			
+		return movieRepository.findByType(type);
+	}
+
+	@Override
+	public List<Movie> findByYear(int year) {
+		return movieRepository.findByYear(year);
+	}
+
+	@Override
+	public List<Movie> findByGenre(String genre) {
+		return movieRepository.findByGenre(genre);
+	}
+
+	@Override
+	public Movie findByTitle(String title) {
+		return movieRepository.findByTitle(title);
+	}
+
+	@Override
+	public List<Movie> sortByImdbRatings() {
+		return movieRepository.sortByImdbRatings();
+	}
+
+	@Override
+	public List<Movie> sortByYear() {
+		return movieRepository.sortByYear();
+	}
+
+	@Override
+	public List<Movie> sortByImdbVotes() {
+		return movieRepository.sortByImdbVotes();
+	}
+
+	
 }

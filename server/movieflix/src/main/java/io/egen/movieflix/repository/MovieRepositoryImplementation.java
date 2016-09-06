@@ -58,8 +58,86 @@ public class MovieRepositoryImplementation implements MovieRepository{
 		
 	}
 
-	
-	
-	
 
+	@Override
+	public List<Movie> findByType(String type) {
+		TypedQuery<Movie> query=em1.createNamedQuery("Movie.findByType",Movie.class);
+		query.setParameter("pType", type);
+		List<Movie> movies=query.getResultList();
+		if(movies!=null && movies.size()>0)
+		{
+			return movies;
+		}
+				return null;
+	}
+
+
+	@Override
+	public List<Movie> findByYear(int year) {
+		TypedQuery<Movie> query=em1.createNamedQuery("Movie.findByYear", Movie.class);
+		query.setParameter("pYear", year);
+		List<Movie> movies=query.getResultList();
+		
+		if(movies!=null && movies.size()>0){
+			return movies;
+		}
+		
+		
+		return null;
+	}
+
+
+	@Override
+	public List<Movie> findByGenre(String genre) {
+		TypedQuery<Movie> query=em1.createNamedQuery("Movie.findByGenre",Movie.class);
+		query.setParameter("pGenre", genre);
+		List<Movie> movies=query.getResultList();
+		if(movies!=null && movies.size()>0)
+		{
+			return movies;
+		}
+		return null;
+	}
+
+
+	@Override
+	public List<Movie> sortByImdbRatings() {
+		TypedQuery<Movie> query=em1.createNamedQuery("Movie.sortByImdbRatings",Movie.class);
+		List<Movie> movies=query.getResultList();
+		
+		if(movies!=null && movies.size()>0)
+		{
+			return movies;
+		}
+		
+		return null;
+	}
+
+
+	@Override
+	public List<Movie> sortByYear() {
+		TypedQuery<Movie> query=em1.createNamedQuery("Movie.sortByYear",Movie.class);
+		List<Movie> movies=query.getResultList();
+		
+		if(movies!=null && movies.size()>0){
+			return movies;
+		}
+		
+		return null;
+	}
+
+
+	@Override
+	public List<Movie> sortByImdbVotes() {
+		TypedQuery<Movie> query=em1.createNamedQuery("Movie.sortByImdbVotes",Movie.class);
+		List<Movie> movies=query.getResultList();
+		
+		if(movies!=null && movies.size()>0){
+			return movies;
+		}
+		
+		return null;
+	}
+
+	
 }

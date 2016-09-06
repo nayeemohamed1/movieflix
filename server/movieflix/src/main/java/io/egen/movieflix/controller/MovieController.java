@@ -48,8 +48,45 @@ public class MovieController {
 		movieService.delete(movieId);
 	}
 	
+	@RequestMapping(method=RequestMethod.GET, path="findbytype/{type}")
+	public List<Movie> findByType(@PathVariable("type") String type){
+		return movieService.findByType(type);
+	}
 	
+	//filter the catalog
+	
+	@RequestMapping(method=RequestMethod.GET, path="findbyyear/{year}")
+	public List<Movie> findByYear(@PathVariable("year") int year){
+		return movieService.findByYear(year);
+		}
+	
+	@RequestMapping(method=RequestMethod.GET, path="findbygenre/{genre}")
+	public List<Movie> findByGenre(@PathVariable("genre") String genre){
+		return movieService.findByGenre(genre);
+	}
+
+	@RequestMapping(method=RequestMethod.GET, path="findbytitle/{title}", produces=MediaType.APPLICATION_JSON_VALUE)
+	public Movie findByTitle(@PathVariable("title") String title){
+		return movieService.findByTitle(title);
+	
+	}
+	//Sort the catalog
 		
+	@RequestMapping(method=RequestMethod.GET, path="sortbyimdbratings", produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public List<Movie> sortByImdbRating(){
+		return movieService.sortByImdbRatings();
+	}
+	
+	@RequestMapping(method=RequestMethod.GET, path="sortbyyears", produces=MediaType.APPLICATION_JSON_UTF8_VALUE)	
+	public List<Movie> sortByYear(){
+		return movieService.sortByYear();
+	}
+	
+	@RequestMapping(method=RequestMethod.GET, path="sortbyimdbvotes", produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public List<Movie> sortByImdbVote(){
+		return movieService.sortByImdbVotes();
+	}
+ 		
 }		
 	
 	
