@@ -54,4 +54,12 @@ public class UserRatingRepositoryImplementation implements UserRatingRepository 
 		em.remove(userRating);
 	}
 
+	@Override
+	public double findAvgUserRatingsByMovieId(String id) {
+		TypedQuery<Double> query=em.createNamedQuery("UserRating.findAvgUserRatingsByMovieId",Double.class);
+		query.setParameter("pMovieId", id);
+		double avg=query.getSingleResult();
+				return avg;
+	}
+
 }

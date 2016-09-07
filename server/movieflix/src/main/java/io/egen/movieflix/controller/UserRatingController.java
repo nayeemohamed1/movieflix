@@ -50,4 +50,9 @@ public class UserRatingController {
 	public void delete(@PathVariable("id") String id){
 		userRatingService.delete(id);
 	}
+
+	@RequestMapping(method=RequestMethod.GET, path="avgratings/{id}")
+	public double findAvgUserRatingsByMovieId(@PathVariable String id){
+		return userRatingService.findAvgUserRatingsByMovieId(id);
+	}
 }

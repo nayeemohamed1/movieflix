@@ -121,5 +121,19 @@ public class UserRatingServiceImplementation implements UserRatingService{
 	userRatingRepository.delete(existing);	
 	}
 
+	@Override
+	public double findAvgUserRatingsByMovieId(String id) {
+		
+		List<UserRating> existing=userRatingRepository.findAllUserRatingsByMovieId(id);
+		
+		if(existing.size()==0){
+
+			throw new UserRatingNotFoundException("User ratings for the id:"+id+" Not found");
+					}
+		
+		return userRatingRepository.findAvgUserRatingsByMovieId(id);
+ 
+	}
+
 	
 }

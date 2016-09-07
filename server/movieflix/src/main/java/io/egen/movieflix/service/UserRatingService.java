@@ -18,5 +18,5 @@ public interface UserRatingService {
 	
 	public void delete(String id);
 	
-
+	public double findAvgUserRatingsByMovieId(String id);
 }

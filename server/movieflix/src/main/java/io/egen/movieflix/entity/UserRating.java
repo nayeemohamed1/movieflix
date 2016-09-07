@@ -9,6 +9,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
@@ -16,7 +17,7 @@ import org.hibernate.annotations.GenericGenerator;
 @NamedQueries({
 	@NamedQuery(name="UserRating.findAll", query="SELECT ur from UserRating ur ORDER BY ur.userRating desc"),
 	@NamedQuery(name="UserRating.findAllUserRatingsByMovieId", query="SELECT ur from UserRating ur ORDER BY ur.userRating desc"),
-	
+	@NamedQuery(name="UserRating.findAvgUserRatingsByMovieId", query="SELECT avg(ur.userRating) from UserRating ur WHERE ur.movie.id=:pMovieId")
 })
 
 public class UserRating {
@@ -67,7 +68,4 @@ public class UserRating {
 	public void setUser(User user) {
 		this.user=user;
 	}
-	
-	
-	
 }

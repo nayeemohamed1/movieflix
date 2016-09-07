@@ -23,6 +23,7 @@ public class User {
 	@GeneratedValue(generator="customUUID")
 	
 	private String id;
+	private String role; 	
 	private String firstname;
 	private String lastname;
 	
@@ -102,6 +103,12 @@ public class User {
 	}
 	public void setZip(int zip) {
 		Zip = zip;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 }
