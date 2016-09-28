@@ -19,16 +19,17 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
     <link rel="stylesheet" href="mystyle.css">
 
 
 
-<!--<link rel="stylesheet" href="mstyle.css">-->
-<!-- <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">-->
 </head>
-<link rel="shortcut icon" href="images/movieflixLogo.PNG"/>
+
+<link rel="icon" href="images/movieflixLogo.PNG"/>
+
 <body>
 
 
@@ -36,8 +37,9 @@
 
     <div class="container"><!-- container-fluid stretch and adjust any items inside the container-->
         <!-- container--will line up with the rest of the elements-->
+
         <div class="navbar-header">
-             <a href="index.html">
+            <a href="index.html">
                 <img src="images/movieflixImage.PNG" class="logoimage"></a>
 
 
@@ -48,15 +50,16 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
+
         <div class="navbar-collapse collapse " id="mynavbar-container">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
                 <li class="dropdown">
-                    <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Catalog <span class="caret"></span> </a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Catalog <span class="caret"></span> </a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="index.html">All</a> </li>
-                        <li><a href="tmovies1.html">Top Rated Movies</a> </li>
-                        <li><a href="tseries1.html">Top Rated Series</a> </li>
+                        <li><a href="#">All </a> </li>
+                        <li><a href="#">Top Rated Movies</a> </li>
+                        <li><a href="#">Top Rated Series</a> </li>
                     </ul>
 
                 </li>
@@ -81,7 +84,7 @@
 
 
             </form>
-            </div>
+        </div>
 
     </div>
 
@@ -89,7 +92,7 @@
 
 <div class="container padding-top-10">
 
-       <div class="jumbotron mflix">
+    <div class="jumbotron mflix">
 
         <h1 >
             Movie<span class="cred">Flix</span>
@@ -100,9 +103,9 @@
 
         <div class="input-group col-lg-6">
             <input type="text" class="form-control" placeholder="Please enter a movie or Tv Serires"/>
-          <!--  <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </span>-->
+            <!--  <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-search"></span>
+                      </span>-->
             <span class="input-group-btn">
                 <button class="btn btn-primary" type="button">Search</button>
             </span>
@@ -113,92 +116,45 @@
 
     <div class="jumbotron myfont">
 
-     <div class="row">
-         <div class="col-xs-4">
-             <div class="container ">
-                 <ul class="breadcrumb">
-                     <li class="active">All </li>
-                     <li><a href="tmovies1.html">Top Movies</a></li>
-                     <li><a href="tseries1.html">Top Series</a></li>
-
-                 </ul>
-             </div>
-         </div>
-
-         <div class="col-xs-6 btn-group">
-             <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Sort  <span class="caret"></span></button>
-             <ul class="dropdown-menu" role="menu">
-                 <li><a href="#">Year</a> </li>
-                 <li><a href="#">IMDB votes</a> </li>
-                 <li><a href="#">IMDB ratings</a> </li>
-             </ul>
-         </div>
-     </div>
-
-
-
-     <hr/>
-    <div class="jumbotron ">
         <div class="row">
-            <div class="col-md-12">
-                <div class="media">
-                    <a href="#" class="thumbnail pull-left">
-                        <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg" alt="The Age of Ultron" width="150" height="200">
-                    </a>
-                    <div class="media-body ">
+            <div class="col-xs-6">
+                <div class="container ">
+                    <ul class="breadcrumb">
+                        <li class="active">All </li>
+                        <li><a href="tmovies1.html">Top Movies</a></li>
+                        <li><a href="tseries1.html">Top Series</a></li>
 
-                        <div class="jumbotron">
-                            <h3>Avengers: Age of Ultron <em class="padding-left-10">2015</em></h3>
-                            <p>When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's Mightiest Heroes to stop the villainous Ultron from enacting his terrible plans.</p>
-                            <button class="btn btn-info pull-right">Read More</button>
-                        </div>
-
-                    </div>
+                    </ul>
                 </div>
+            </div>
 
+            <div class="col-xs-6 btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Sort  <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Year</a> </li>
+                    <li><a href="#">IMDB votes</a> </li>
+                    <li><a href="#">IMDB ratings</a> </li>
+                </ul>
             </div>
         </div>
-    </div>
 
-     <hr/>
-    <div class="jumbotron">
+
         <div class="row">
-            <div class="col-md-12">
-                <div class="media">
-                    <a href="#" class="thumbnail pull-left "><!--Thumbnail class quickly formats the image putting some border and space around it with an hover effect-->
-                        <img src="http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg" width="150" height="200">
-                    </a>
 
-                    <div class="media-body">
-                        <div class="jumbotron">
-                            <h3>The Avengers
-                                <em class="padding-left-10">2012</em></h3>
-                            <p>Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.</p>
-                            <button class="btn btn-info pull-right">Read More</button>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
         </div>
-    </div>
-
-    <hr/>
-
+        <hr/>
         <div class="jumbotron">
             <div class="row">
                 <div class="col-md-12">
                     <div class="media">
-                        <a href="" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg" width="150" height="200">
+                        <a href="#" class="thumbnail pull-left">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMjE0NTc2MzM1OV5BMl5BanBnXkFtZTgwMDk2NjA2NjE@._V1_SX300.jpg"  width="150" height="200">
                         </a>
+                        <div class="media-body ">
 
-                        <div class="media-body">
                             <div class="jumbotron">
-                                <h3>The Shawshank Redemption
-                                    <em class="padding-left-10">1994</em></h3>
-                                <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+                                <h3>Homeland <em class="padding-left-10">2015</em></h3>
+                                <p>When Marine Nicolas Brody is hailed as a hero after he returns home from eight years of captivity in Iraq, intelligence officer Carrie Mathison is the only one who suspects that he may have been turned.</p>
                                 <button class="btn btn-info pull-right">Read More</button>
                             </div>
 
@@ -210,296 +166,19 @@
         </div>
 
         <hr/>
-
-
         <div class="jumbotron">
             <div class="row">
                 <div class="col-md-12">
                     <div class="media">
-                        <a href="" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_SX300.jpg" width="150" height="200">
+                        <a href="#" class="thumbnail pull-left "><!--Thumbnail class quickly formats the image putting some border and space around it with an hover effect-->
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTgzNjAzMDE0NF5BMl5BanBnXkFtZTcwNTEyMzM3OA@@._V1_SX300.jpg" width="150" height="200">
                         </a>
 
                         <div class="media-body">
                             <div class="jumbotron">
-                                <h3>Batman Begins
-                                    <em class="padding-left-10">2005</em></h3>
-                                <p>After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href=" ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg" class="thumbnail pull-left" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>The Dark Knight
-                                    <em class="padding-left-10">2008</em></h3>
-                                <p>When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>The Dark Knight Rises
-                                    <em class="padding-left-10">2012</em></h3>
-                                <p>Eight years after the Joker's reign of anarchy, the Dark Knight, with the help of the enigmatic Selia, is forced from his imposed exile to save Gotham City, now on the edge of total annihilation, from the brutal guerrilla terrorist Bane.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMjU4NDExNDM1NF5BMl5BanBnXkFtZTgwMDIyMTgxNzE@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>The Revenant
-                                    <em class="padding-left-10">2015</em></h3>
-                                <p>A frontiersman on a fur trading expedition in the 1820's fights for survival after being mauled by a bear and left for dead by members of his own hunting team.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>Star Wars: The Force Awakens
-                                    <em class="padding-left-10">2015</em></h3>
-                                <p>Three decades after the defeat of the Galactic Empire, a new threat arises. The First Order attempts to rule the galaxy and only a ragtag group of heroes can stop them, along with the help of the Resistance.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>The Martian
-                                    <em class="padding-left-10">2015</em></h3>
-                                <p>During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMTAzZmJiOGQtOWM3NS00MDEwLWJiNGEtN2QzMDM3NDJjMWQwXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>Airlift
-                                    <em class="padding-left-10">2016</em></h3>
-                                <p>Airlift is an uplifting and entertaining edge-of-the-seat thriller and is the story of the biggest ever human evacuation in the history of mankind.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMTUyMTE0ODcxNF5BMl5BanBnXkFtZTgwODE4NDQzNTE@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>Mad Max: Fury Road
-                                    <em class="padding-left-10">2015</em></h3>
-                                <p>A woman rebels against a tyrannical ruler in post apocalyptic Australia in search for her homeland with the help of a group of female prisoners, a psychotic worshiper, and a drifter named Max.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMjM2Nzg4MzkwOF5BMl5BanBnXkFtZTgwNzA0OTE3NjE@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>Spectre
-                                    <em class="padding-left-10">2015</em></h3>
-                                <p>A cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMjEyMjcyNDI4MF5BMl5BanBnXkFtZTcwMDA5Mzg3OA@@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>The Godfather
-                                    <em class="padding-left-10">1972</em></h3>
-                                <p>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>Interstellar
-                                    <em class="padding-left-10">2014</em></h3>
-                                <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
-                                <button class="btn btn-info pull-right">Read More</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr/>
-
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="media">
-                        <a href="#" class="thumbnail pull-left ">
-                            <img src="http://ia.media-imdb.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX300.jpg" width="150" height="200">
-                        </a>
-
-                        <div class="media-body">
-                            <div class="jumbotron">
-                                <h3>The Wolf of Wall Street
+                                <h3>The Office
                                     <em class="padding-left-10">2013</em></h3>
-                                <p>Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.</p>
+                                <p>A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium. Based on the hit BBC series.</p>
                                 <button class="btn btn-info pull-right">Read More</button>
                             </div>
 
@@ -512,22 +191,349 @@
 
         <hr/>
 
-    <div class="row">
-        <div class="col-md-offset-6 pull-right" >
-        <ul class="pagination pagination-sm   ">
-            <li class="active"><a href="#">1</a></li>
-            <li ><a href="all2.html">2</a></li>
-            <li><a href="all3.html">3</a></li>
-            <li><a href="all4.html">4</a></li>
-            <li><a href="all5.html">5</a></li>
-        </ul>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTYyMTQ0MTU1OF5BMl5BanBnXkFtZTcwMjI0Njg4Ng@@._V1_SX300.jpg" width="150" height="200">
+                        </a>
 
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>NCIS
+                                    <em class="padding-left-10">2013</em></h3>
+                                <p>The cases of the Naval Criminal Investigative Service's Washington DC Major Case Response Team, led by Special Agent Leroy Jethro Gibbs</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
+
+        <hr/>
+
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTg3NTkwNzAxOF5BMl5BanBnXkFtZTcwMjM1NjI5MQ@@._V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>Prison Break
+                                    <em class="padding-left-10">2009</em></h3>
+                                <p>Due to a political conspiracy, an innocent man is sent to death row and his only hope is his brother who makes it his mission to deliberately get himself sent to the same prison in order to break the both of them from the inside out.</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTA5MzAzNTcyNjZeQTJeQWpwZ15BbWU3MDUyMzE1MTk@._V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>How I Met Your Mother
+                                    <em class="padding-left-10">2014</em></h3>
+                                <p>A father recounts to his children, through a series of flashbacks, the journey he and his four best friends took leading up to him meeting their mother.</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMjA3NzMyMzU1MV5BMl5BanBnXkFtZTcwNjc1ODUwMg@@._V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>Lost
+                                    <em class="padding-left-10">2010</em></h3>
+                                <p>The survivors of a plane crash are forced to work together in order to survive on a seemingly deserted tropical island</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTUzNTMwODI1OV5BMl5BanBnXkFtZTgwMDIzMTQ0NTE@._V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>True Detective
+                                    <em class="padding-left-10">2015</em></h3>
+                                <p>An anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law.</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTgyNDk4ODk5MF5BMl5BanBnXkFtZTgwNjY5ODc0NjE@._V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>Hawaii Five-0
+                                    <em class="padding-left-10">2016</em></h3>
+                                <p>Steve McGarrett returns home to Oahu, in order to find his father's killer. The governor offers him the chance to run his own task force (Five-0). Steve's team is joined by Chin Ho Kelly, Danny \"Danno\" Williams, and Kono Kalakaua.</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTc5NzgwNDE3N15BMl5BanBnXkFtZTgwNDAxMTY5MTE@._V1._CR51,41,938,1336_SY132_CR2,0,89,132_AL_.jpg_V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>Cosmos: A Spacetime Odyssey
+                                    <em class="padding-left-10">2014</em></h3>
+                                <p>A documentary series that explores how we discovered the laws of nature and found our coordinates in space and time.</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BNTgyMzIzNDAyM15BMl5BanBnXkFtZTgwMTE1Mzg0MTE@._V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>Last Week Tonight with John Oliver
+                                    <em class="padding-left-10">2016</em></h3>
+                                <p>Former Daily Show Correspondent John Oliver brings his persona to this new weekly news satire program</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BNTg0MzEzMjQ4OV5BMl5BanBnXkFtZTcwNjk5NzkyMQ@@._V1._CR26,5,333,403_SY132_CR10,0,89,132_AL_.jpg_V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>The Daily Show
+                                    <em class="padding-left-10">2016</em></h3>
+                                <p>America's top fake news show.</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMjA4NTkzNjg1OF5BMl5BanBnXkFtZTcwNjg3MTI1Ng@@._V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>House M.D.
+                                    <em class="padding-left-10">2012</em></h3>
+                                <p>An antisocial maverick doctor who specializes in diagnostic medicine does whatever it takes to solve puzzling cases that come his way using his crack team of doctors and his wits.</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTM1NzE5OTI5NV5BMl5BanBnXkFtZTcwNjY5NTI1MQ@@._V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>The Colbert Report
+                                    <em class="padding-left-10">2015</em></h3>
+                                <p>Satirical newscaster Stephen Colbert provides humorous commentary on the big issues going on in the United States and the rest of the world, with his larger-than-life ego and overly-patriotic spirit along with him every step of the way.</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTEyMzc0ODAwMjVeQTJeQWpwZ15BbWU4MDMxODk4OTIx._V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>The Newsroom
+                                    <em class="padding-left-10">2014</em></h3>
+                                <p>A newsroom undergoes some changes in its workings and morals as a new team is brought in, bringing unexpected results for its existing news anchor.</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media">
+                        <a href="#" class="thumbnail pull-left ">
+                            <img src="http://ia.media-imdb.com/images/M/MV5BMTM2OTYwMjIzOV5BMl5BanBnXkFtZTcwNTMzNTAwMQ@@._V1._CR0,0,317,396_SY132_CR8,0,89,132_AL_.jpg_V1_SX300.jpg" width="150" height="200">
+                        </a>
+
+                        <div class="media-body">
+                            <div class="jumbotron">
+                                <h3>Top Gear
+                                    <em class="padding-left-10">2015</em></h3>
+                                <p>Jeremy, Richard and James talk about everything car-related. From new cars to how they're fueled, this show has it all</p>
+                                <button class="btn btn-info pull-right">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="row">
+            <div class="col-md-offset-6 pull-right" >
+                <ul class="pagination pagination-sm   ">
+
+                    <li ><a href="index.html">1</a></li>
+                    <li><a href="all2.html">2</a></li>
+                    <li><a href="all3.html">3</a></li>
+                    <li><a href="all4.html">4</a></li>
+                    <li class="active"><a href="disabled">5</a></li>
+                </ul>
+
+            </div>
+        </div>
 
     </div>
 
-    </div>
+</div>
 
 
 
